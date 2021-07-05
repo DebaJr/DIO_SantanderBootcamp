@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">DIO_SANTANDER</string>
+    <string name="app_calculator_name">CALCULADORA DE NOTAS</string>
+    <string name="nota1">Nota 1:</string>
+    <string name="nota2">Nota 2:</string>
+    <string name="notas">Notas:</string>
+    <string name="peso">Peso:</string>
+    <string name="ativar_peso">Usar pesos</string>
+    <string name="faltas">Faltas:</string>
+    <string name="calcular">Calcular</string>
+    <string name="resultado_nota">Nota final:</string>
+    <string name="resultado_estado">Situação:</string>
+    <string name="aprovado">APROVADO</string>
+    <string name="reprovado">REPROVADO</string>
+    <string name="reprovado_faltas">REPROVADO POR FALTAS</string>
+</resources>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:title="@string/app_calculator_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:targetApi="lollipop" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/ativar_peso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/peso_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="@string/peso"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.865"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/switch1" />
+
+    <TextView
+        android:id="@+id/nota01_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:text="@string/nota1"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.195"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/peso_label" />
+
+    <EditText
+        android:id="@+id/nota01_input"
+        android:layout_width="90dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintStart_toEndOf="@+id/nota01_label"
+        app:layout_constraintTop_toTopOf="@+id/nota01_label"
+        android:autofillHints="0"
+        android:hint="0" />
+
+    <EditText
+        android:id="@+id/peso01_input"
+        android:layout_width="90dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/nota01_input"
+        app:layout_constraintTop_toTopOf="@+id/nota01_label"
+        android:autofillHints="0"
+        android:hint="0"
+        android:layout_marginLeft="14dp" />
+
+    <TextView
+        android:id="@+id/nota02_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:padding="16dp"
+        android:text="@string/nota2"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.195"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nota01_label" />
+
+    <EditText
+        android:id="@+id/nota2_input"
+        android:layout_width="90dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintStart_toEndOf="@+id/nota01_label"
+        app:layout_constraintTop_toTopOf="@+id/nota02_label"
+        android:autofillHints="0"
+        android:hint="0"/>
+
+
+    <EditText
+        android:id="@+id/peso2_input"
+        android:layout_width="90dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.311"
+        app:layout_constraintStart_toEndOf="@+id/nota2_input"
+        app:layout_constraintTop_toTopOf="@+id/nota02_label"
+        android:autofillHints="0"
+        android:hint="0"/>
+
+    <TextView
+        android:id="@+id/faltas_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:padding="16dp"
+        android:text="@string/faltas"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.195"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nota02_label" />
+
+
+    <EditText
+        android:id="@+id/faltas_input"
+        android:layout_width="190dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/faltas_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.339"
+        app:layout_constraintStart_toEndOf="@+id/faltas_label"
+        app:layout_constraintTop_toTopOf="@+id/faltas_label"
+        android:autofillHints="0"
+        android:hint="0"/>
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/calcular"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/faltas_label" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_resultado"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_margin="8dp"
+        android:layout_marginTop="2dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcular">
+
+        <TableLayout
+            android:id="@+id/reusltado_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/nota_final"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/resultado_nota"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/nota_final_valor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textSize="24sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/resultado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/resultado_estado"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/resultado_valor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textSize="24sp" />
+            </TableRow>
+
+        </TableLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
