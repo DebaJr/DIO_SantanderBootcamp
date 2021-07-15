@@ -1,17 +1,21 @@
 <resources>
-    <string name="app_name">imcApp-DIO-Santander-Bootcamp</string>
+    <string name="app_name">Calculadora IMC||BMI</string>
     <string name="app_alias">IMC || BMI</string>
     <string name="feet">pés</string>
     <string name="inches">polegadas</string>
-    <string name="weight_stones">Peso (pedras):</string>
-    <string name="weight_kg">Peso (kg):</string>
-    <string name="height_feet">Altura (pés/polegadas):</string>
     <string name="height_needed_msg">Indique uma altura</string>
     <string name="units">Unidades:</string>
     <string name="meters">metros</string>
-    <string name="height_meters">Altura (m):</string>
     <string name="stones">pedras</string>
     <string name="kilogram">quilos</string>
     <string name="weight">Peso:</string>
     <string name="height">Altura:</string>
+    <string name="calculate">Calcular</string>
+    <string name="low_weight_msg">Abaixo do peso</string>
+    <string name="normal_weight">Peso normal</string>
+    <string name="overweight">Sobrepeso</string>
+    <string name="obeseI">Obesidade (Grau I)</string>
+    <string name="obeseII">Obesidade Severa (Grau II)</string>
+    <string name="obeseIII">Obesidade Mórbida (Grau III)</string>
+    <string name="extreme_low_weight">Muito abaixo do peso</string>
 </resources>

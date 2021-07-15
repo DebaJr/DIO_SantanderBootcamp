@@ -221,4 +221,29 @@
         app:layout_constraintTop_toTopOf="@id/weightTV"
         android:autofillHints="@string/height_needed_msg"/>
 
+    <TextView
+        android:id="@+id/imc_bmiTV"
+        android:layout_width="wrap_content"
+        android:layout_height="128dp"
+        app:layout_constraintTop_toBottomOf="@id/weightTV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="24sp"
+        />
+
+    <Button
+        android:id="@+id/calcBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/imc_bmiTV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="8dp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/app_primary"
+        android:text="@string/calculate"
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

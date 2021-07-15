@@ -9,4 +9,10 @@
     <color name="white">#FFFFFFFF</color>
     <color name="app_primary">#1A76B3</color>
     <color name="app_secondary">#0C369F</color>
+    <color name="low_weight">#F8D315</color>
+    <color name="normal_weight">#63CC18</color>
+    <color name="over_weight">#F88F56</color>
+    <color name="obeseI">#C85904</color>
+    <color name="obeseII">#C83204</color>
+    <color name="obeseIII">#FB0000</color>
 </resources>
